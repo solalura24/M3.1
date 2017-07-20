@@ -5,14 +5,6 @@ body{
 	margin: 0px;
 }
 
-#nav {
-    list-style: none;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: #808000;
-  }
-
 #header-nav{
 	height:75px;
 	background-color: #F0E68C;
@@ -23,38 +15,51 @@ body{
 	font-size: 1.5em;
 	font-family: 'Acme', sans-serif;
 }
+div#collapsable-nav.navbar-collapse{
+	border:0px;
+}
 h1{
 	color: #4B0082;
-	margin:5px auto 5px -35px;
+	margin:5px auto 5px 15px;
 	text-shadow: 2px 2px #00FF7F;
 	line-height: .8;
 }
-
 #nav-list {
-  margin-top: 5px;
-  background-color: #8B4513;
-  padding:0px;
-  color:white;
-  display: block;	
-
+  margin-top: 20px;
+  background-color: #32CD32;
+  padding-bottom:5px;
 }
 
 #nav-list a {
-  color: #F5FFFA;
-  padding:0px;
-  border:1px;
+  color: #951C49;
+  text-align: center;
+  padding-bottom:0px;
 }
 #nav-list a:hover {
-  background: #AFEEEE;
+  background: #8B008B;
   color:white;
   padding-bottom:-5px;
-  padding:0px;
+}
+.collapsable-nav li{
+	padding-top:10px;
+	display: block;
+	height:100%;
+	padding:0px;
 }
 
-.container{
-	display:block;
+button.navbar-toggle.collapsed{
+  margin-top:15px;
 }
 
+h3{
+	margin-bottom: 15px;
+}
+#menu{
+	background-color: #800080;
+	color:white;
+	padding:0px 5px 0px 5px;
+	margin: 0px 10px 0px 10px;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 #collapsable-nav#nav-list.items{
@@ -70,7 +75,6 @@ h1{
   visibility: hidden;
  }
  
- 
 }
 
 /********** Small devices only **********/
@@ -80,60 +84,24 @@ h1{
   visibility: hidden!important;
   display: none !important;
  }
- button.navbar-toggle.collapsed.visible-xs{
-  margin-top:-75px;
-  display: hidden;
-}
-
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-  .navbar-brand {
  
-  #nav-list{
-    padding-bottom: -10px;
-  }
-
-button.navbar-toggle.collapsed {
-  margin-top:-75px;
-}
-
- #menu{
- 	margin:30px 25px 30px 25px;
- }
 .visible-xs{
 	position: relative;
-    display: inline-block;
+    display: block;
 } 
 }
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Header */
 button.navbar-toggle.collapsed {
-  margin-top:-80px;
-  margin-right:10px;
+	visibility: visible;
 }
 
-#header-nav {
-  padding-right:5px;
-  padding-left:0px;
- }
-h2{
-  padding-bottom:0px;
-}
-.navbar-brand h1 {
-    padding-top: 5px;
-    height: 80px;
-    font-size: 8vw;
-    margin-left: -15px;
-  }
-
-  }
-  #nav-list{
-    padding-bottom: -10px;
-   }
 #collapsable-nav#nav-list.items{
   visibility: visible;
  }
