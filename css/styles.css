@@ -73,6 +73,8 @@ h2{
 }
 h3{
 	margin-bottom: 15px;
+	padding-top: 5px;
+	margin-top: 10px;
 }
 #menu{
 	background-color: #800080;
