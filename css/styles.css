@@ -1,0 +1,141 @@
+body{
+	font-size:16px;
+	font-family: 'Lobster', cursive;
+	padding: 0px;
+	margin: 0px;
+}
+
+#nav {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #808000;
+  }
+
+#header-nav{
+	height:75px;
+	background-color: #F0E68C;
+	border:1px solid black;
+	border-radius: 0px;
+}
+.nav-brand h1{
+	font-size: 1.5em;
+	font-family: 'Acme', sans-serif;
+}
+h1{
+	color: #4B0082;
+	margin:5px auto 5px -35px;
+	text-shadow: 2px 2px #00FF7F;
+	line-height: .8;
+}
+
+#nav-list {
+  margin-top: 5px;
+  background-color: #8B4513;
+  padding:0px;
+  color:white;
+  display: block;	
+
+}
+
+#nav-list a {
+  color: #F5FFFA;
+  padding:0px;
+  border:1px;
+}
+#nav-list a:hover {
+  background: #AFEEEE;
+  color:white;
+  padding-bottom:-5px;
+  padding:0px;
+}
+
+.container{
+	display:block;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+#collapsable-nav#nav-list.items{
+  visibility: hidden;
+ }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+#collapsible-nav#nav-list.items{
+  visibility: hidden;
+ }
+ 
+ 
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+#collapsable-nav#nav-list.items{
+  visibility: hidden!important;
+  display: none !important;
+ }
+ button.navbar-toggle.collapsed.visible-xs{
+  margin-top:-75px;
+  display: hidden;
+}
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+ 
+  #nav-list{
+    padding-bottom: -10px;
+  }
+
+button.navbar-toggle.collapsed {
+  margin-top:-75px;
+}
+
+ #menu{
+ 	margin:30px 25px 30px 25px;
+ }
+.visible-xs{
+	position: relative;
+    display: inline-block;
+} 
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+button.navbar-toggle.collapsed {
+  margin-top:-80px;
+  margin-right:10px;
+}
+
+#header-nav {
+  padding-right:5px;
+  padding-left:0px;
+ }
+h2{
+  padding-bottom:0px;
+}
+.navbar-brand h1 {
+    padding-top: 5px;
+    height: 80px;
+    font-size: 8vw;
+    margin-left: -15px;
+  }
+
+  }
+  #nav-list{
+    padding-bottom: -10px;
+   }
+#collapsable-nav#nav-list.items{
+  visibility: visible;
+ }
+}
+
