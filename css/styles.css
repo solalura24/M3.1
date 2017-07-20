@@ -62,6 +62,11 @@ h1{
   border: 1px solid black;
 }
 
+button.navbar-toggle.collapsed{
+  margin-top:15px;
+  margin-right: 30px;
+}
+
 h2{
 	padding-top: 30px;
 }
@@ -112,9 +117,9 @@ h3{
 } 
 }
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
+@media (min-width: 150px) and (max-width: 479px) {
   /* Header */
-button.navbar-toggle.collapsed {
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
 	visibility: visible;
 }
 
@@ -122,9 +127,5 @@ button.navbar-toggle.collapsed {
   visibility: visible;
  }
 
- button.navbar-toggle.collapsed.visible-xs.hidden-sm{
-  margin-top:15px;
-  margin-right: -50px;
-}
 }
 
