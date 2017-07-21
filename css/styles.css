@@ -26,14 +26,6 @@ body{
   text-decoration: none;
 }
 
-#nav-list ul li{
-	padding-left:0px;
-	padding-right:0px;
-}
-ul.nav.navbar.open {
-  margin-bottom: 120px;
-  position: absolute;
-}
 div#collapsible-nav.navbar-collapse{
 	padding-top:0px;
 	margin-top: 0px;
@@ -45,14 +37,14 @@ h1{
 	line-height: .8;
 }
 #nav-list {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   background-color: #DA70D6;
   padding-bottom:5px;
   border-top: 0px;
   padding-top:0px;
- }
-
+  margin-bottom: -5px;
+}
 #nav-list a {
   color: #951C49;
   padding-bottom:0px;
@@ -63,23 +55,15 @@ h1{
   color:white;
   padding-bottom:-5px;
 }
-#nav-list ul> li> a{
-	display: block;
-	padding:0px;
-	clear:both;
-	
-}
-#nav-list a span {
-  font-size: 1.8em;
-}
+#collapsable-nav ul li{
+	border:2px solid black;
+	padding-bottom: 5px;
 
+}
 button.navbar-toggle.collapsed span,{
 	border:2px solid black;
 }
 
-button.navbar-toggle{
-	border: 2px solid black;
-}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid black;
 }
@@ -99,10 +83,7 @@ h3{
 	padding:0px 5px 0px 5px;
 	margin: 0px 10px 0px 10px;
 }
-li{
-	border:2px solid black;
-	padding-bottom:5px;
-}
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 #collapsable-nav#nav-list.items{
